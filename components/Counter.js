@@ -1,8 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import { PropTypes } from 'prop-types';
+import { useState } from 'react';
 
 export default function Counter({ title }) {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleClick = (action) => {
     switch (action) {
